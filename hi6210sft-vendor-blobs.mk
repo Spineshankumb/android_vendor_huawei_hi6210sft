@@ -86,6 +86,12 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/hisi_cfg_alice.ini:system/etc/hisi_cfg_alice.ini \
         $(LOCAL_PATH)/etc/hisi_cfg_cherry.ini:system/etc/hisi_cfg_cherry.ini
 
+# Keys
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/usr/keychars,system/usr/keychars) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/usr/keylayout,system/usr/keylayout) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/usr/srec,system/usr/srec)
+
 # Modems
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/log,system/etc/log) \
