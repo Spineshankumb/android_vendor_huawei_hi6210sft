@@ -102,3 +102,8 @@ PRODUCT_COPY_FILES += \
 # TP Test Parameters
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/tp_test_parameters,system/etc/tp_test_parameters)
+
+# Wifi
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/wifi/hostapd_hisi.conf:system/etc/wifi/hostapd_hisi.conf \
+        $(LOCAL_PATH)/etc/wifi/wpa_supplicant_hisi.conf:system/etc/wifi/wpa_supplicant_hisi.conf
