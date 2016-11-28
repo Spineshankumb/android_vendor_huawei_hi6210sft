@@ -34,6 +34,15 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/bluetooth/bt_stack_log.conf:system/etc/bt_stack_log.conf \
         $(LOCAL_PATH)/etc/bluetooth/bt_vendor.conf:system/etc/bt_vendor.conf
 
+# Camera
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/camera,system/etc/camera) \
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/camera_orientation.cfg:system/etc/camera_orientation.cfg \
+        $(LOCAL_PATH)/etc/camera_resolutions.cfg:system/etc/camera_resolutions.cfg \
+        $(LOCAL_PATH)/etc/camera_videosnapshot.cfg:system/etc/camera_videosnapshot.cfg
+
 # Binaries
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/bin,system/bin)
