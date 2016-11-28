@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/media_codecs.xml:system/etc/media_codecs.xml \
         $(LOCAL_PATH)/etc/media_profiles.xml:system/etc/media_profiles.xml
 
+# DHCPCD
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
+
 # Binaries
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/bin,system/bin)
