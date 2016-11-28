@@ -68,4 +68,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
 
+# GPS
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/gnss,system/etc/gnss) \
 
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/globalAutoAdapt-conf.xml:system/etc/globalAutoAdapt-conf.xml \
+        $(LOCAL_PATH)/etc/globalMatchs-conf.xml:system/etc/globalMatchs-conf.xml \
+        $(LOCAL_PATH)/etc/goldeneye_config.xml:system/etc/goldeneye_config.xml \
+        $(LOCAL_PATH)/etc/gps.conf:system/etc/gps.conf \
+        $(LOCAL_PATH)/etc/gpsconfig.xml:system/etc/gpsconfig.xml \
+        $(LOCAL_PATH)/etc/hisi_cfg.ini:system/etc/hisi_cfg.ini \
+        $(LOCAL_PATH)/etc/hisi_cfg_alice.ini:system/etc/hisi_cfg_alice.ini \
+        $(LOCAL_PATH)/etc/hisi_cfg_cherry.ini:system/etc/hisi_cfg_cherry.ini
