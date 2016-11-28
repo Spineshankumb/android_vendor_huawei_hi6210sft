@@ -26,6 +26,10 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/audio_effects.conf:system/etc/audio_effects.conf \
         $(LOCAL_PATH)/etc/audio_policy.conf:system/etc/audio_policy.conf
 
+# Binaries
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/bin,system/bin)
+
 # Bluetooth
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/bluetooth/auto_pair_devlist.conf:system/etc/auto_pair_devlist.conf \
@@ -64,6 +68,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
 
-# Binaries
-PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/bin,system/bin)
+
