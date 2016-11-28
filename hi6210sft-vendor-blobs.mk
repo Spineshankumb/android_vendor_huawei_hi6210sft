@@ -81,3 +81,15 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/hisi_cfg.ini:system/etc/hisi_cfg.ini \
         $(LOCAL_PATH)/etc/hisi_cfg_alice.ini:system/etc/hisi_cfg_alice.ini \
         $(LOCAL_PATH)/etc/hisi_cfg_cherry.ini:system/etc/hisi_cfg_cherry.ini
+
+# Modems
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/log,system/etc/log) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/manufacture,system/etc/manufacture) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/modemConfig,system/etc/modemConfig) \
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/factory_modem.cfg:system/etc/factory_modem.cfg \
+        $(LOCAL_PATH)/etc/jankbdcfg.json:system/etc/jankbdcfg.json \
+        $(LOCAL_PATH)/etc/jankcfg.json:system/etc/jankcfg.json \
+        $(LOCAL_PATH)/etc/kerneldump.sh:system/etc/kerneldump.sh
