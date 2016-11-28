@@ -56,6 +56,10 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/performance_cpu_policy.xml:system/etc/performance_cpu_policy.xml \
         $(LOCAL_PATH)/etc/super_cpu_policy.xml:system/etc/super_cpu_policy.xml
 
+# Device State Monitor
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/device_state_monitor.conf:system/etc/device_state_monitor.conf
+
 # DHCPCD
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
