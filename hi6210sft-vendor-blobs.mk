@@ -113,6 +113,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/tp_test_parameters,system/etc/tp_test_parameters)
 
+# Vendors
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/etc,system/vendor/etc) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/firmware,system/vendor/firmware) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/framework,system/vendor/framework) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/lib,system/vendor/lib) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/lib64,system/vendor/lib64) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/media,system/vendor/media) \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor/pittpatt,system/vendor/pittpatt)
+
 # Wifi
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/wifi/hostapd_hisi.conf:system/etc/wifi/hostapd_hisi.conf \
