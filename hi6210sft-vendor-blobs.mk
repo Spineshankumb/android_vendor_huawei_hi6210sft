@@ -43,6 +43,12 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/camera_resolutions.cfg:system/etc/camera_resolutions.cfg \
         $(LOCAL_PATH)/etc/camera_videosnapshot.cfg:system/etc/camera_videosnapshot.cfg
 
+# Codecs K3
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/hisi_omx.cfg:system/etc/hisi_omx.cfg \
+        $(LOCAL_PATH)/etc/media_codecs.xml:system/etc/media_codecs.xml \
+        $(LOCAL_PATH)/etc/media_profiles.xml:system/etc/media_profiles.xml
+
 # Binaries
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/bin,system/bin)
