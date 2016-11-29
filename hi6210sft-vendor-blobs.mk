@@ -86,6 +86,17 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/hisi_cfg_alice.ini:system/etc/hisi_cfg_alice.ini \
         $(LOCAL_PATH)/etc/hisi_cfg_cherry.ini:system/etc/hisi_cfg_cherry.ini
 
+# Graphics
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
+        $(LOCAL_PATH)/lib/hw/gralloc.hi6210sft.so:system/lib/hw/gralloc.hi6210sft.so \
+        $(LOCAL_PATH)/lib/libion.so:system/lib/libion.so
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/egl/libGLES_mali.so:system/lib64/egl/libGLES_mali.so \
+        $(LOCAL_PATH)/lib64/hw/gralloc.hi6210sft.so:system/lib64/hw/gralloc.hi6210sft.so \
+        $(LOCAL_PATH)/lib64/libion.so:system/lib64/libion.so
+
 # Keys
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/usr/keychars,system/usr/keychars) \
