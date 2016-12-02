@@ -19,8 +19,7 @@ LOCAL_PATH := vendor/huawei/hi6210sft/proprietary
 # Audio
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/audio,system/etc/audio) \
-	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/srs,system/etc/srs) \
-	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/sws,system/etc/sws) 
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/srs,system/etc/srs)
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/audio_effects.conf:system/etc/audio_effects.conf \
