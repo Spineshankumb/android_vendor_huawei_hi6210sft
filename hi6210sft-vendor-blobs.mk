@@ -85,6 +85,19 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/hisi_cfg_alice.ini:system/etc/hisi_cfg_alice.ini \
         $(LOCAL_PATH)/etc/hisi_cfg_cherry.ini:system/etc/hisi_cfg_cherry.ini
 
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib/hw/gps.hi110x.default.so:system/lib/hw/gps.hi110x.default.so \
+        $(LOCAL_PATH)/lib/libgps_factory_test.so:system/lib/libgps_factory_test.so \
+        $(LOCAL_PATH)/lib/libgps_factory_test_hi110x.so:system/lib/libgps_factory_test_hi110x.so
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/hw/gps.hi110x.default.so:system/lib64/gps.hi110x.default.so \
+        $(LOCAL_PATH)/lib64/hw/gps.hi6210sft.so:system/lib64/gps.hi6210sft.so
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/libgps_factory_test.so:system/lib64/libgps_factory_test.so \
+        $(LOCAL_PATH)/lib64/libgps_factory_test_hi110x.so:system/lib64/libgps_factory_test_hi110x.so
+
 # Graphics
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
