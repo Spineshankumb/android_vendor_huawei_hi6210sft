@@ -71,6 +71,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/fpgaice40,system/fpgaice40) \
 
+# FM Radio
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib/hw/libbcmfm_if.so:system/lib/hw/libbcmfm_if.so \
+        $(LOCAL_PATH)/lib/hw/libhisifm_if.so:system/lib/hw/libhisifm_if.so
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/hw/libbcmfm_if.so:system/lib64/hw/libbcmfm_if.so \
+        $(LOCAL_PATH)/lib64/hw/libhisifm_if.so:system/lib64/hw/libhisifm_if.so
+
 # GPS
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc/gnss,system/etc/gnss) \
