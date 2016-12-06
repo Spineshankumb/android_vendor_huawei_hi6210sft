@@ -136,6 +136,14 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/jankcfg.json:system/etc/jankcfg.json \
         $(LOCAL_PATH)/etc/kerneldump.sh:system/etc/kerneldump.sh
 
+# NFC
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+        $(LOCAL_PATH)/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/hw/nfc_nci.pn54x.default.so:system/lib64/hw/nfc_nci.pn54x.default.so
+
 # Thermal
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/thermald.xml:system/etc/thermald.xml \
