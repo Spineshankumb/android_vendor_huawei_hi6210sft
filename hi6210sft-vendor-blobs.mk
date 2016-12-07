@@ -167,3 +167,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/wifi/hostapd_hisi.conf:system/etc/wifi/hostapd_hisi.conf \
         $(LOCAL_PATH)/etc/wifi/wpa_supplicant_hisi.conf:system/etc/wifi/wpa_supplicant_hisi.conf
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib/libchrlog.so:system/lib/libchrlog.so \
+        $(LOCAL_PATH)/lib/libhisi_ini.so:system/lib/libhisi_ini.so \
+        $(LOCAL_PATH)/lib/libwifi_factory_test.so:system/lib/libwifi_factory_test.so \
+        $(LOCAL_PATH)/lib/libwifi_factory_test_hi110x.so:system/lib/libwifi_factory_test_hi110x.so \
+        $(LOCAL_PATH)/lib/libwifipro.so:system/lib/libwifipro.so \
+        $(LOCAL_PATH)/lib/libwpa_client_hisi.so:system/lib/libwpa_client_hisi.so \
+        $(LOCAL_PATH)/lib/oamdrv.ko:system/lib/oamdrv.ko \
+        $(LOCAL_PATH)/lib/wifi.ko:system/lib/wifi.ko
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/libchrlog.so:system/lib64/libchrlog.so \
+        $(LOCAL_PATH)/lib64/libhisi_ini.so:system/lib64/libhisi_ini.so \
+        $(LOCAL_PATH)/lib64/libwifi_factory_test.so:system/lib64/libwifi_factory_test.so \
+        $(LOCAL_PATH)/lib64/libwifi_factory_test_hi110x.so:system/lib64/libwifi_factory_test_hi110x.so \
+        $(LOCAL_PATH)/lib64/libwifipro.so:system/lib64/libwifipro.so \
+        $(LOCAL_PATH)/lib64/libwpa_client_hisi.so:system/lib64/libwpa_client_hisi.so
