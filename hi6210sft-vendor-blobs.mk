@@ -31,11 +31,11 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/etc/bluetooth/auto_pair_devlist.conf:system/etc/auto_pair_devlist.conf \
-        $(LOCAL_PATH)/etc/bluetooth/bt_did.conf:system/etc/bt_did.conf \
-        $(LOCAL_PATH)/etc/bluetooth/bt_stack.conf:system/etc/bt_stack.conf \
-        $(LOCAL_PATH)/etc/bluetooth/bt_stack_log.conf:system/etc/bt_stack_log.conf \
-        $(LOCAL_PATH)/etc/bluetooth/bt_vendor.conf:system/etc/bt_vendor.conf
+        $(LOCAL_PATH)/etc/bluetooth/auto_pair_devlist.conf:system/etc/bluetooth/auto_pair_devlist.conf \
+        $(LOCAL_PATH)/etc/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
+        $(LOCAL_PATH)/etc/bluetooth/bt_stack.conf:system/etc/bluetooth/bt_stack.conf \
+        $(LOCAL_PATH)/etc/bluetooth/bt_stack_log.conf:system/bluetooth/etc/bt_stack_log.conf \
+        $(LOCAL_PATH)/etc/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 # Camera
 PRODUCT_COPY_FILES += \
