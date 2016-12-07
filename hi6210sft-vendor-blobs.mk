@@ -165,10 +165,11 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/etc/wifi/hostapd.conf:system/etc/wifi/hostapd.conf \
+        $(LOCAL_PATH)/etc/wifi/hostapd_hisi.conf:system/etc/wifi/hostapd_hisi.conf \
         $(LOCAL_PATH)/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
         $(LOCAL_PATH)/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-        $(LOCAL_PATH)/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+        $(LOCAL_PATH)/etc/wifi/wpa_supplicant_hisi.conf:system/etc/wifi/wpa_supplicant_hisi.conf \
+        $(LOCAL_PATH)/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/lib/libchrlog.so:system/lib/libchrlog.so \
