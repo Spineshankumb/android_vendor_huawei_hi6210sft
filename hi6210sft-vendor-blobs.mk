@@ -34,8 +34,16 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/bluetooth/auto_pair_devlist.conf:system/etc/bluetooth/auto_pair_devlist.conf \
         $(LOCAL_PATH)/etc/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
         $(LOCAL_PATH)/etc/bluetooth/bt_stack.conf:system/etc/bluetooth/bt_stack.conf \
-        $(LOCAL_PATH)/etc/bluetooth/bt_stack_log.conf:system/bluetooth/etc/bt_stack_log.conf \
+        $(LOCAL_PATH)/etc/bluetooth/bt_stack_log.conf:system/etc/bluetooth/bt_stack_log.conf \
         $(LOCAL_PATH)/etc/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib/libbt_factory_test.so:system/lib/libbt_factory_test.so \
+        $(LOCAL_PATH)/lib/libbt_factory_test_hi110x.so:system/lib/libbt_factory_test_hi110x.so
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/libbt_factory_test.so:system/lib64/libbt_factory_test.so \
+        $(LOCAL_PATH)/lib64/libbt_factory_test_hi110x.so:system/lib64/libbt_factory_test_hi110x.so
 
 # Camera
 PRODUCT_COPY_FILES += \
