@@ -25,17 +25,27 @@ PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/audio_effects.conf:system/etc/audio_effects.conf \
         $(LOCAL_PATH)/etc/audio_policy.conf:system/etc/audio_policy.conf
 
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib/hw/audio.primary.hi6210sft.so:system/lib/hw/audio.primary.hi6210sft.so \
+        $(LOCAL_PATH)/lib/libaudioalgoservice_jni.so:system/lib/libaudioalgoservice_jni.so \
+        $(LOCAL_PATH)/lib/libaudio_custom.so:system/lib/libaudio_custom.so \
+        $(LOCAL_PATH)/lib/libaudioflinger.huawei.so:system/lib/libaudioflinger.huawei.so \
+        $(LOCAL_PATH)/lib/libhuaweiaudioalgoservice.so:system/lib/libhuaweiaudioalgoservice.so \
+        $(LOCAL_PATH)/lib/libhuaweiprocessing.so:system/lib/libhuaweiprocessing.so \
+        $(LOCAL_PATH)/lib/libmax98925.so:system/lib/libmax98925.so \
+        $(LOCAL_PATH)/lib/libsrsprocessing.so:system/lib/libsrsprocessing.so \
+        $(LOCAL_PATH)/lib/libswsprocessing.so:system/lib/libswsprocessing.so \
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/lib64/hw/audio.primary.hi6210sft.so:system/lib64/hw/audio.primary.hi6210sft.so \
+        $(LOCAL_PATH)/lib64/libaudioalgoservice_jni.so:system/lib64/libaudioalgoservice_jni.so \
+        $(LOCAL_PATH)/lib64/libaudio_custom.so:system/lib64/libaudio_custom.so \
+        $(LOCAL_PATH)/lib64/libmax98925.so:system/lib64/libmax98925.so \
+        $(LOCAL_PATH)/lib64/libswsprocessing.so:system/lib64/libswsprocessing.so
+
 # Binaries
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/bin,system/bin)
-
-# Bluetooth
-PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/etc/bluetooth/auto_pair_devlist.conf:system/etc/bluetooth/auto_pair_devlist.conf \
-        $(LOCAL_PATH)/etc/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
-        $(LOCAL_PATH)/etc/bluetooth/bt_stack.conf:system/etc/bluetooth/bt_stack.conf \
-        $(LOCAL_PATH)/etc/bluetooth/bt_stack_log.conf:system/etc/bluetooth/bt_stack_log.conf \
-        $(LOCAL_PATH)/etc/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/lib/libbt_factory_test.so:system/lib/libbt_factory_test.so \
